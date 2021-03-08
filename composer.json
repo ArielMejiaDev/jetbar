@@ -1,0 +1,51 @@
+{
+    "name": "arielmejiadev/jetbar",
+    "description": "It adds a sidebar dashboard theme for Laravel applications with Jetstream.",
+    "keywords": [
+        "arielmejiadev",
+        "jetbar"
+    ],
+    "homepage": "https://github.com/arielmejiadev/jetbar",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ariel Mejia Dev",
+            "email": "arielmejiadev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/filesystem": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arielmejiadev\\Jetbar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arielmejiadev\\Jetbar\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arielmejiadev\\Jetbar\\JetbarServiceProvider"
+            ],
+            "aliases": {
+                "Jetbar": "Arielmejiadev\\Jetbar\\JetbarFacade"
+            }
+        }
+    }
+}
