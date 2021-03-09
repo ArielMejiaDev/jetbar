@@ -105,7 +105,7 @@
 
                         <template v-for="team in $page.props.user.all_teams" :key="team.id">
                             <form @submit.prevent="switchToTeam(team)">
-                                <button class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out w-full" as="button">
+                                <button class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out w-full">
                                     <div class="flex items-center">
                                         <svg v-if="team.id == $page.props.user.current_team_id" class="mr-2 h-5 w-5 text-green-400" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                         <div>{{ team.name }}</div>
@@ -127,7 +127,7 @@
                     <inertia-link :href="route('api-tokens.index')" v-if="$page.props.jetstream.hasApiFeatures" class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100">API Tokens</inertia-link>
 
                     <form @submit.prevent="logout">
-                        <button class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 w-full text-left focus:outline-none" as="button">
+                        <button class="block px-4 py-2 text-sm text-gray-500 hover:bg-gray-100 w-full text-left focus:outline-none">
                             Log Out
                         </button>
                     </form>

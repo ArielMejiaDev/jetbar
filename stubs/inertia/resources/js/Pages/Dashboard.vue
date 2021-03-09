@@ -6,12 +6,12 @@
 
         <jet-bar-container>
 
-            <jet-bar-alert title="This is an alert" link-text="View more" :link="route('profile.show')" />
+            <jet-bar-alert text="This is an alert message" />
 
             <jet-bar-stats />
 
             <jet-bar-table :headers="['name', 'title', 'status', 'role', '']" >
-                <tr>
+                <tr class="hover:bg-gray-50" v-for="index in 3" :key="index">
                     <jet-bar-table-data>Jane Cooper</jet-bar-table-data>
                     <jet-bar-table-data>
                         <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
