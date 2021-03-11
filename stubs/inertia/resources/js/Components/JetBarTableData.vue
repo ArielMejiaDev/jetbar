@@ -6,10 +6,6 @@
 
 <script>
 export default {
-    name: "JetBarRowTableData"
+    name: "JetBarTableData"
 }
 </script>
-
-<style scoped>
-
-</style>

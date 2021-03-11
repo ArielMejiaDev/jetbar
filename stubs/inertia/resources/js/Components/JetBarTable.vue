@@ -26,7 +26,7 @@
 
 <script>
 export default {
-    name: "Table",
+    name: "JetBarTable",
     data() {
         return {
             items: 3,
@@ -40,7 +40,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>

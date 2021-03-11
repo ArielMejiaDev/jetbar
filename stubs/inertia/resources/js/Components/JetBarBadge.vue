@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "Badge",
+    name: "JetBarBadge",
     props: {
         text: {
             type: String,
@@ -31,7 +31,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-
-</style>

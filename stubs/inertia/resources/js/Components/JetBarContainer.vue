@@ -9,7 +9,3 @@ export default {
     name: "JetBarContainer"
 }
 </script>
-
-<style scoped>
-
-</style>

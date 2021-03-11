@@ -39,7 +39,8 @@
 
 <script>
 export default {
-    props: {
+    name: "JetBarSimplePagination"
+,    props: {
         items: Object,
     },
 }

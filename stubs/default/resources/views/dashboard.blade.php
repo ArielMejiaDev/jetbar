@@ -6,7 +6,7 @@
     <x-jet-bar-container>
         <x-jet-bar-alert text="This is an alert" />
         <x-jet-bar-stats />
-        <x-jet-bar-table :headers="['name', 'title', 'status', 'role', '']">
+        <x-jet-bar-table :headers="['name', 'title', 'status', 'role', '', '']">
             <template x-data="{ total:3 }" x-for="index in total">
                 <tr class="hover:bg-gray-50">
                     <x-jet-bar-table-data>
@@ -28,6 +28,12 @@
 
                     <x-jet-bar-table-data>
                         <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    </x-jet-bar-table-data>
+
+                    <x-jet-bar-table-data>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <x-jet-bar-icon type="trash" fill />
+                        </a>
                     </x-jet-bar-table-data>
                 </tr>
             </template>
