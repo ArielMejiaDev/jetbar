@@ -8,7 +8,32 @@
 
             <jet-bar-alert text="This is an alert message" />
 
-            <jet-bar-stats />
+            <jet-bar-stats-container >
+                <jet-bar-stat-card title="Total clients" number="6389" type="warning">
+                    <template v-slot:icon>
+                        <jet-bar-icon type="users" fill />
+                    </template>
+                </jet-bar-stat-card>
+
+                <jet-bar-stat-card title="Account balance" number="$ 46,760.89" type="success">
+                    <template v-slot:icon>
+                        <jet-bar-icon type="money" fill />
+                    </template>
+                </jet-bar-stat-card>
+
+
+                <jet-bar-stat-card title="New sales" number="376" type="info">
+                    <template v-slot:icon>
+                        <jet-bar-icon type="cart" fill />
+                    </template>
+                </jet-bar-stat-card>
+
+                <jet-bar-stat-card title="Pending contacts" number="35" type="danger">
+                    <template v-slot:icon>
+                        <jet-bar-icon type="message" fill />
+                    </template>
+                </jet-bar-stat-card>
+            </jet-bar-stats-container>
 
             <jet-bar-table :headers="['name', 'title', 'status', 'role', '', '']" >
                 <tr class="hover:bg-gray-50" v-for="index in 3" :key="index">
@@ -41,19 +66,21 @@
 import AppLayout from '@/Layouts/AppLayout'
 import Welcome from '@/Jetstream/Welcome'
 import JetBarTable from "@/Components/JetBarTable";
-import JetBarStats from "@/Components/JetBarStats";
+import JetBarStatsContainer from "@/Components/JetBarStatsContainer";
 import JetBarAlert from "@/Components/JetBarAlert";
 import JetBarBadge from "@/Components/JetBarBadge";
 import JetBarTableData from "@/Components/JetBarTableData";
 import JetBarContainer from "@/Components/JetBarContainer";
 import JetBarIcon from "@/Components/JetBarIcon";
+import JetBarStatCard from "@/Components/JetBarStatCard";
 
 export default {
     components: {
         JetBarIcon,
         JetBarContainer,
         JetBarAlert,
-        JetBarStats,
+        JetBarStatsContainer,
+        JetBarStatCard,
         AppLayout,
         Welcome,
         JetBarTable,
