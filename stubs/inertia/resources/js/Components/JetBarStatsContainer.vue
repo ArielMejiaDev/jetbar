@@ -9,15 +9,8 @@
 </template>
 
 <script>
-import JetBarStatCard from "@/Components/JetBarStatCard";
-import JetBarIcon from "@/Components/JetBarIcon";
 
 export default {
     name: "StatsCardsComponent",
-    components: {
-        JetBarStatCard,
-        JetBarIcon
-    }
 }
 </script>
-

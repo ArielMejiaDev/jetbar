@@ -21,7 +21,6 @@
                     </template>
                 </jet-bar-stat-card>
 
-
                 <jet-bar-stat-card title="New sales" number="376" type="info">
                     <template v-slot:icon>
                         <jet-bar-icon type="cart" fill />
@@ -64,28 +63,26 @@
 
 <script>
 import AppLayout from '@/Layouts/AppLayout'
-import Welcome from '@/Jetstream/Welcome'
-import JetBarTable from "@/Components/JetBarTable";
-import JetBarStatsContainer from "@/Components/JetBarStatsContainer";
-import JetBarAlert from "@/Components/JetBarAlert";
-import JetBarBadge from "@/Components/JetBarBadge";
-import JetBarTableData from "@/Components/JetBarTableData";
 import JetBarContainer from "@/Components/JetBarContainer";
-import JetBarIcon from "@/Components/JetBarIcon";
+import JetBarAlert from "@/Components/JetBarAlert";
+import JetBarStatsContainer from "@/Components/JetBarStatsContainer";
 import JetBarStatCard from "@/Components/JetBarStatCard";
+import JetBarTable from "@/Components/JetBarTable";
+import JetBarTableData from "@/Components/JetBarTableData";
+import JetBarBadge from "@/Components/JetBarBadge";
+import JetBarIcon from "@/Components/JetBarIcon";
 
 export default {
     components: {
-        JetBarIcon,
+        AppLayout,
         JetBarContainer,
         JetBarAlert,
         JetBarStatsContainer,
         JetBarStatCard,
-        AppLayout,
-        Welcome,
         JetBarTable,
+        JetBarTableData,
         JetBarBadge,
-        JetBarTableData
+        JetBarIcon,
     },
 }
 </script>
